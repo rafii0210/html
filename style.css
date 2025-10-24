@@ -1,0 +1,166 @@
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
+}
+
+nav a {
+  color: #3b6ef7;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header {
+  margin-top: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px; /* atur jarak bawah dari h1 ke paragraf */
+  }
+
+  header p {
+    margin-top: 0; /* hilangkan jarak atas paragraf */
+    color: #555;   /* opsional: kasih warna teks agar lebih lembut */
+  }
+
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* biar proporsional */
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+
+.overview {
+  margin-top: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+ .box {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .box h3 {
+    margin-bottom: 20px;
+  }
+
+  /* Grid 3 kolom */
+  .social-media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .social-media li {
+    list-style: none;
+  }
+
+  .social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 48px; /* ✅ semua tombol tinggi sama */
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  /* Semua tombol lebar sama */
+  .social-media li a {
+    width: 100%;
+  }
+
+  /* Instagram */
+  .btn-outline-instagram {
+    border: 1px solid #c13584;
+    color: #c13584;
+  }
+  .btn-outline-instagram:hover {
+    background-color: #c13584;
+    color: white;
+  }
+
+  /* YouTube */
+  .btn-outline-youtube {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+  }
+  .btn-outline-youtube:hover {
+    background-color: #ff0000;
+    color: white;
+  }
+
+
+  .btn-outline-tiktok {
+    border: 1px solid #000;
+    color: #000;
+  }
+  .btn-outline-tiktok:hover {
+    background-color: #000;
+    color: white;
+  }
+
+  .btn-outline-whatsapp {
+    border: 1px solid #25D366;
+    color: #25D366;
+  }
+  .btn-outline-whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+  }
+
+  .btn-outline-x {
+    border: 1px solid #000;
+    color: #000;
+  }
+  .btn-outline-x:hover {
+    background-color: #000;
+    color: white;
+  }
+
+  .btn-outline-facebook {
+    border: 1px solid #1877f2;
+    color: #1877f2;
+  }
+  .btn-outline-facebook:hover {
+    background-color: #1877f2;
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    .social-media {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid #000;
+}
